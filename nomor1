@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int bil,sum=0,max=0,min=0,i=1,jumlah;
+    float rata;
+    jumlah=10;
+    cout<<"Masukan Bilangan "<<i<<" : ";cin>>bil;
+    i++;
+    max=bil;
+    min=bil;
+    sum=sum+bil;
+    while(i<=jumlah)
+    {
+        cout<<"Masukan Bilangan "<<i<<" : ";cin>>bil;
+        if(bil>max)
+            max=bil;
+        if(bil<min)
+            min=bil;
+        sum=sum+bil;
+        i++;
+    }
+    rata=(float)sum/jumlah;
+    cout<<"=================================="<<endl;
+    cout<<"\nRata-Rata : "<<rata<<endl;
+    cout<<"Bilangan Terendah : "<<min<<endl;
+    cout<<"Bilangan Tertinggi : "<<max<<endl;  
+}
